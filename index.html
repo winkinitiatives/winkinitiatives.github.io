@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Wink Initiatives - Software Development & Training in Ghana" />
+    <meta name="keywords" content="Wink Initiatives, Software Development, Training, Ghana, Tech Company" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wink Initiatives</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #f2f2f2;
+        }
+
+        /* Navigation */
+        nav {
+            background: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #0078FF;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to bottom right, #0078FF, #00C5FF);
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about,
+        .services,
+        .training,
+        .team,
+        .contact {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+
+        .about h2,
+        .services h2,
+        .training h2,
+        .team h2,
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            color: #0078FF;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin-bottom: 1em;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service {
+            background: #f8f8f8;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 0.95em;
+        }
+
+        /* Training Section */
+        .training-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .training-content img {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .training-content div {
+            max-width: 600px;
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            background: #f8f8f8;
+            border-radius: 5px;
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+
+        .team-member p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Contact Section */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            gap: 15px;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            background: #0078FF;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .contact button:hover {
+            background: #005bbf;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9em;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            nav ul {
+                float: none;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .training-content {
+                flex-direction: column;
+            }
+
+            .team-grid,
+            .services-grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">Wink Initiatives</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Wink Initiatives</h1>
+        <p>Leading the way in software development and training in Ghana, helping businesses and individuals build their
+            digital future.</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>Wink Initiatives is a Ghana-based technology company specializing in top-notch software development and
+            professional training services. We combine innovative thinking, cutting-edge technologies, and a
+            client-centric approach to deliver solutions that transform businesses and empower professionals.</p>
+        <p>Whether you’re a startup looking to build a brand-new product, an established company seeking to streamline
+            operations, or an individual aiming to enhance your skillset, Wink Initiatives is committed to guiding you
+            every step of the way.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>Custom Software Development</h3>
+                <p>We develop tailored software solutions to meet the unique needs of your business, ensuring
+                    scalability, security, and performance.</p>
+            </div>
+            <div class="service">
+                <h3>Mobile App Development</h3>
+                <p>Our team crafts intuitive, user-friendly mobile applications for Android and iOS, bringing your ideas
+                    to the fingertips of your customers.</p>
+            </div>
+            <div class="service">
+                <h3>Web Applications & Portals</h3>
+                <p>From e-commerce websites to complex web portals, we deliver responsive, fast, and reliable solutions
+                    to grow your online presence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section class="training" id="training">
+        <h2>Training Programs</h2>
+        <div class="training-content">
+            <img src="https://via.placeholder.com/400x250.png?text=Wink+Initiatives+Training" alt="Training Session" />
+            <div>
+                <p>Our training programs are designed to equip individuals and organizations with in-demand skills.
+                    Whether you’re new to the tech world or looking to advance your expertise, we have courses tailored
+                    to your needs:</p>
+                <ul>
+                    <li>Full-Stack Web Development</li>
+                    <li>Mobile App Development (Android & iOS)</li>
+                    <li>Data Science & Machine Learning</li>
+                    <li>UI/UX Design Principles</li>
+                    <li>Agile Project Management & DevOps</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100.png?text=CEO" alt="CEO" />
+                <h3>John Doe</h3>
+                <p>CEO & Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100.png?text=CTO" alt="CTO" />
+                <h3>Jane Smith</h3>
+                <p>CTO & Head of Training</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100.png?text=UI" alt="UI/UX Lead" />
+                <h3>Kofi Mensah</h3>
+                <p>UI/UX Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100.png?text=DM" alt="Marketing Lead" />
+                <h3>Akosua Adjei</h3>
+                <p>Digital Marketing Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to discuss your project or enroll in our training programs? Get in touch!</p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Wink Initiatives, Ghana. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Update footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
