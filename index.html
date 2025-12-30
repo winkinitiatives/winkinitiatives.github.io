@@ -3,362 +3,478 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Wink Initiatives - Software Development & Training in Ghana" />
-    <meta name="keywords" content="Wink Initiatives, Software Development, Training, Ghana, Tech Company" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wink Initiatives</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-            background: #f2f2f2;
-        }
-
-        /* Navigation */
-        nav {
-            background: #fff;
-            border-bottom: 1px solid #ccc;
-            padding: 1em;
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
-
-        nav .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #333;
-            text-decoration: none;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            float: right;
-        }
-
-        nav ul li {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            color: #0078FF;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(to bottom right, #0078FF, #00C5FF);
-            color: #fff;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* About Section */
-        .about,
-        .services,
-        .training,
-        .team,
-        .contact {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-            background: #fff;
-            margin-bottom: 20px;
-        }
-
-        .about h2,
-        .services h2,
-        .training h2,
-        .team h2,
-        .contact h2 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-            color: #0078FF;
-        }
-
-        .about p {
-            max-width: 800px;
-            margin-bottom: 1em;
-        }
-
-        /* Services Section */
-        .services-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .service {
-            background: #f8f8f8;
-            border-radius: 5px;
-            flex: 1;
-            min-width: 250px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .service h3 {
-            font-size: 1.3em;
-            margin-bottom: 10px;
-        }
-
-        .service p {
-            font-size: 0.95em;
-        }
-
-        /* Training Section */
-        .training-content {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .training-content img {
-            max-width: 400px;
-            width: 100%;
-            border-radius: 5px;
-        }
-
-        .training-content div {
-            max-width: 600px;
-        }
-
-        /* Team Section */
-        .team-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .team-member {
-            background: #f8f8f8;
-            border-radius: 5px;
-            flex: 1;
-            min-width: 250px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-
-        .team-member h3 {
-            margin-bottom: 5px;
-            font-size: 1.2em;
-        }
-
-        .team-member p {
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        /* Contact Section */
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            max-width: 500px;
-            gap: 15px;
-        }
-
-        .contact input,
-        .contact textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        .contact button {
-            background: #0078FF;
-            color: #fff;
-            border: none;
-            padding: 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        .contact button:hover {
-            background: #005bbf;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            font-size: 0.9em;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-
-        /* Responsive */
-        @media (max-width: 800px) {
-            nav ul {
-                float: none;
-                text-align: center;
-                margin-top: 10px;
-            }
-
-            .training-content {
-                flex-direction: column;
-            }
-
-            .team-grid,
-            .services-grid {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Wink Initiatives partners with product teams to design, build, and scale modern software platforms, web apps, and mobile experiences." />
+    <meta name="keywords"
+        content="software development, product engineering, cloud solutions, wink initiatives, ghana, africa" />
+    <meta property="og:title" content="Wink Initiatives | Product Engineering Partner" />
+    <meta property="og:description"
+        content="Digital products engineered with senior talent across Africa. Web, mobile, and cloud solutions delivered end-to-end." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://winkinitiatives.github.io" />
+    <meta property="og:image" content="assets/img/hero-bg.jpg" />
+    <title>Wink Initiatives | Software Product Development Partner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <a href="#" class="logo">Wink Initiatives</a>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#training">Training</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Wink Initiatives</h1>
-        <p>Leading the way in software development and training in Ghana, helping businesses and individuals build their
-            digital future.</p>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Us</h2>
-        <p>Wink Initiatives is a Ghana-based technology company specializing in top-notch software development and
-            professional training services. We combine innovative thinking, cutting-edge technologies, and a
-            client-centric approach to deliver solutions that transform businesses and empower professionals.</p>
-        <p>Whether you’re a startup looking to build a brand-new product, an established company seeking to streamline
-            operations, or an individual aiming to enhance your skillset, Wink Initiatives is committed to guiding you
-            every step of the way.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service">
-                <h3>Custom Software Development</h3>
-                <p>We develop tailored software solutions to meet the unique needs of your business, ensuring
-                    scalability, security, and performance.</p>
-            </div>
-            <div class="service">
-                <h3>Mobile App Development</h3>
-                <p>Our team crafts intuitive, user-friendly mobile applications for Android and iOS, bringing your ideas
-                    to the fingertips of your customers.</p>
-            </div>
-            <div class="service">
-                <h3>Web Applications & Portals</h3>
-                <p>From e-commerce websites to complex web portals, we deliver responsive, fast, and reliable solutions
-                    to grow your online presence.</p>
-            </div>
+    <header class="site-header" data-header>
+        <div class="container">
+            <a class="brand" href="#top" aria-label="Wink Initiatives homepage">Wink<span>Initiatives</span></a>
+            <nav class="site-nav" id="primary-navigation" data-nav>
+                <a href="#services">Services</a>
+                <a href="#approach">Approach</a>
+                <a href="#case-studies">Case Studies</a>
+                <a href="#training">Upskilling</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact" class="nav-cta">Book a discovery call</a>
+            </nav>
+            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="primary-navigation" data-nav-toggle>Menu</button>
         </div>
-    </section>
+    </header>
 
-    <!-- Training Section -->
-    <section class="training" id="training">
-        <h2>Training Programs</h2>
-        <div class="training-content">
-            <img src="https://via.placeholder.com/400x250.png?text=Wink+Initiatives+Training" alt="Training Session" />
-            <div>
-                <p>Our training programs are designed to equip individuals and organizations with in-demand skills.
-                    Whether you’re new to the tech world or looking to advance your expertise, we have courses tailored
-                    to your needs:</p>
-                <ul>
-                    <li>Full-Stack Web Development</li>
-                    <li>Mobile App Development (Android & iOS)</li>
-                    <li>Data Science & Machine Learning</li>
-                    <li>UI/UX Design Principles</li>
-                    <li>Agile Project Management & DevOps</li>
-                </ul>
+    <main>
+        <section class="hero" id="top">
+            <div class="container">
+                <div class="hero-copy">
+                    <span class="hero-eyebrow">Software engineering partner</span>
+                    <h1 class="hero-title">Build, launch, and scale digital products without adding headcount.</h1>
+                    <p class="hero-lede">Wink Initiatives brings senior software engineers, product strategists, and
+                        designers together to deliver resilient platforms for ambitious teams across Africa and the UK.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="primary-btn" href="#contact">Schedule a strategy call</a>
+                        <a class="secondary-btn" href="#case-studies">See project outcomes</a>
+                    </div>
+                    <div class="hero-clients">
+                        <span>Trusted by teams in finance, public sector, logistics, and health</span>
+                        <span class="client-badge">Fintech</span>
+                        <span class="client-badge">Public Services</span>
+                        <span class="client-badge">Logistics</span>
+                        <span class="client-badge">HealthTech</span>
+                    </div>
+                </div>
+                <aside class="hero-aux" aria-label="Delivery metrics">
+                    <h3>Senior delivery from discovery to launch</h3>
+                    <p>We embed with your team, align on the roadmap, and deliver production-ready software in rapid,
+                        transparent sprints.</p>
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <div class="metric-number">40+</div>
+                            <div class="metric-label">Products shipped</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-number">6 wks</div>
+                            <div class="metric-label">Average MVP timeline</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-number">95%</div>
+                            <div class="metric-label">Client retention</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-number">24/7</div>
+                            <div class="metric-label">Cloud monitoring</div>
+                        </div>
+                    </div>
+                    <p class="faded">"Wink Initiatives behaves like a true partner—guiding strategy, sharing
+                        accountability, and delivering the tech that powers our growth."</p>
+                </aside>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Team Section -->
-    <section class="team" id="team">
-        <h2>Meet Our Team</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <img src="https://via.placeholder.com/100.png?text=CEO" alt="CEO" />
-                <h3>Michael Affare</h3>
-                <p>CEO & Lead Developer</p>
+        <section id="services">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="section-kicker">What we do</span>
+                    <h2 class="section-title">Product engineering across the full lifecycle</h2>
+                    <p class="section-description">From idea validation to enterprise-scale operations, we provide the
+                        multidisciplinary team you need to move faster and de-risk delivery.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Product Strategy & Discovery</h3>
+                        <p>Shape the right solution before writing code with facilitated workshops, user research, and
+                            ROI-backed roadmaps.</p>
+                        <ul>
+                            <li>Innovation sprints & design thinking</li>
+                            <li>Service blueprints & journey mapping</li>
+                            <li>Technical feasibility assessments</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <h3>Custom Web Applications</h3>
+                        <p>Deliver fast, secure, and responsive platforms built on modern JavaScript, .NET, and
+                            cloud-native architectures.</p>
+                        <ul>
+                            <li>B2B SaaS platforms</li>
+                            <li>Workflow automation portals</li>
+                            <li>Customer onboarding & self-service</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <h3>Mobile & Cross-Platform</h3>
+                        <p>Create intuitive native and cross-platform apps with performance analytics, resilient APIs,
+                            and offline support.</p>
+                        <ul>
+                            <li>iOS, Android, and Flutter</li>
+                            <li>Progressive web apps</li>
+                            <li>Embedded analytics & telemetry</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <h3>Cloud & DevOps Enablement</h3>
+                        <p>Modernize infrastructure with automated pipelines, IaC, continuous delivery, and proactive
+                            monitoring.</p>
+                        <ul>
+                            <li>Azure, AWS & Google Cloud</li>
+                            <li>Kubernetes & container orchestration</li>
+                            <li>Infrastructure as Code & security reviews</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <h3>Data Platforms & Analytics</h3>
+                        <p>Unlock insights with dashboards, predictive models, and governed data pipelines aligned to
+                            business outcomes.</p>
+                        <ul>
+                            <li>Data warehousing & ETL</li>
+                            <li>BI dashboards & reporting</li>
+                            <li>Machine learning experimentation</li>
+                        </ul>
+                    </article>
+                    <article class="service-card">
+                        <h3>Managed Delivery Squads</h3>
+                        <p>Augment your capacity with autonomous squads that integrate with your product leadership and
+                            deliver iteratively.</p>
+                        <ul>
+                            <li>Cross-functional agile teams</li>
+                            <li>Release governance & QA automation</li>
+                            <li>Knowledge transfer & documentation</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <!-- <div class="team-member">
-                <img src="https://via.placeholder.com/100.png?text=CTO" alt="CTO" />
-                <h3>Enoch </h3>
-                <p>CTO & Head of Training</p>
-            </div>
-            <div class="team-member">
-                <img src="https://via.placeholder.com/100.png?text=UI" alt="UI/UX Lead" />
-                <h3>Kofi Mensah</h3>
-                <p>UI/UX Lead</p>
-            </div>
-            <div class="team-member">
-                <img src="https://via.placeholder.com/100.png?text=DM" alt="Marketing Lead" />
-                <h3>Akosua Adjei</h3>
-                <p>Digital Marketing Specialist</p>
-            </div> -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Ready to discuss your project or enroll in our training programs? Email us at <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=winkinitaitives@gmail.com"
-                target="_blank">winkinitaitives@gmail.com</a>.</p>
-    </section>
+        <section id="approach">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="section-kicker">How we deliver</span>
+                    <h2 class="section-title">Transparent, outcome-led collaboration</h2>
+                    <p class="section-description">Every engagement is anchored by measurable outcomes, lean delivery,
+                        and the rituals that keep stakeholders confident.</p>
+                </div>
+                <div class="approach-grid">
+                    <article class="step-card">
+                        <span class="step-number">01</span>
+                        <h3>Discover & Align</h3>
+                        <p>We map user needs, define success metrics, and triage priorities with key stakeholders to
+                            establish a shared vision.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">02</span>
+                        <h3>Design & Prototype</h3>
+                        <p>Rapid prototyping and UX testing validate product decisions early, ensuring frictionless
+                            experiences before development.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">03</span>
+                        <h3>Build & Iterate</h3>
+                        <p>Senior engineers ship incremental releases with automated QA, code reviews, and DevOps
+                            practices baked in.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-number">04</span>
+                        <h3>Launch & Scale</h3>
+                        <p>We manage releases, observability, training, and knowledge transfer so your team can run
+                            confidently post-launch.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
+        <section id="case-studies">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="section-kicker">Case studies</span>
+                    <h2 class="section-title">Results that compound</h2>
+                    <p class="section-description">We work with founders, scale-ups, and enterprise teams to build the
+                        platforms their users rely on every day.</p>
+                </div>
+                <div class="case-grid">
+                    <article class="case-card">
+                        <figure class="case-img">
+                            <img src="assets/img/portfolio/app-1.jpg" alt="Mobile banking application interface" />
+                        </figure>
+                        <div class="case-body">
+                            <h3>Digital lending platform</h3>
+                            <div class="case-tags">
+                                <span class="case-tag">Fintech</span>
+                                <span class="case-tag">Cloud-native</span>
+                            </div>
+                            <ul class="case-results">
+                                <li>Cut loan approval time from 48 hours to under 15 minutes.</li>
+                                <li>Scaled to 120k monthly active users with automated KYC and credit scoring.</li>
+                                <li>Delivered Azure pipeline with blue-green deployments and SOC2 controls.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="case-card">
+                        <figure class="case-img">
+                            <img src="assets/img/portfolio/product-1.jpg" alt="Operations dashboard on laptop" />
+                        </figure>
+                        <div class="case-body">
+                            <h3>Public services case management</h3>
+                            <div class="case-tags">
+                                <span class="case-tag">GovTech</span>
+                                <span class="case-tag">Process automation</span>
+                            </div>
+                            <ul class="case-results">
+                                <li>Unified 7 legacy systems into one portal with secure role-based access.</li>
+                                <li>Digitized 300+ workflows, eliminating paper-based approvals.</li>
+                                <li>Real-time dashboards improved decision-making across all regions.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="case-card">
+                        <figure class="case-img">
+                            <img src="assets/img/portfolio/branding-1.jpg"
+                                alt="Team collaborating on product strategy" />
+                        </figure>
+                        <div class="case-body">
+                            <h3>Logistics intelligence suite</h3>
+                            <div class="case-tags">
+                                <span class="case-tag">SaaS</span>
+                                <span class="case-tag">Data analytics</span>
+                            </div>
+                            <ul class="case-results">
+                                <li>Implemented predictive routing with ML models that reduce idle time by 28%.</li>
+                                <li>Delivered mobile driver app and dispatcher control center within 12 weeks.</li>
+                                <li>Integrated telematics, payments, and customer notifications in a single platform.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="capabilities">
+            <div class="container">
+                <div class="split-section">
+                    <article class="highlight-card">
+                        <span class="section-kicker">Specialist capabilities</span>
+                        <h3>Expertise that extends your team</h3>
+                        <ul>
+                            <li>API-first architectures, microservices, and platform reengineering.</li>
+                            <li>Design systems, accessibility audits, and experience modernization.</li>
+                            <li>Security-by-design, compliance readiness, and data protection.</li>
+                            <li>Operational playbooks, instrumentation, and DevOps coaching.</li>
+                        </ul>
+                    </article>
+                    <article class="highlight-card">
+                        <h3>Technology toolkit</h3>
+                        <p class="faded">We select the stack that supports your business case today and scales with
+                            tomorrow&rsquo;s roadmap.</p>
+                        <div class="tech-cloud">
+                            <span class="tech-chip">TypeScript & Node.js</span>
+                            <span class="tech-chip">React & Next.js</span>
+                            <span class="tech-chip">.NET & C#</span>
+                            <span class="tech-chip">Flutter</span>
+                            <span class="tech-chip">Python & FastAPI</span>
+                            <span class="tech-chip">PostgreSQL</span>
+                            <span class="tech-chip">Azure & AWS</span>
+                            <span class="tech-chip">Docker & Kubernetes</span>
+                            <span class="tech-chip">Power BI & Superset</span>
+                            <span class="tech-chip">Terraform & Pulumi</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="training">
+            <div class="container">
+                <div class="training-section">
+                    <div class="training-content">
+                        <div>
+                            <span class="section-kicker">Upskilling</span>
+                            <h2 class="section-title">Training programs that strengthen your delivery culture</h2>
+                            <p class="section-description">We curate corporate academies and open cohorts that turn
+                                internal teams into high-performing product organizations.</p>
+                            <ul class="training-list">
+                                <li>Full-stack engineering with cloud delivery best practices.</li>
+                                <li>Product management and agile leadership for hybrid teams.</li>
+                                <li>Data storytelling, analytics engineering, and applied AI.</li>
+                                <li>UI/UX design systems, accessibility, and prototyping at scale.</li>
+                            </ul>
+                        </div>
+                        <div class="training-card">
+                            <h4>Corporate academies</h4>
+                            <p>Custom programmes combining coaching, live labs, and real project briefs tailored to your
+                                sector and maturity level.</p>
+                            <ul class="training-list">
+                                <li>6- to 12-week learning sprints</li>
+                                <li>Dedicated mentors & code reviewers</li>
+                                <li>Assessments mapped to business KPIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="section-intro">
+                    <span class="section-kicker">Testimonials</span>
+                    <h2 class="section-title">Teams that build with us stay with us</h2>
+                    <p class="section-description">Hear from leaders who rely on Wink Initiatives to accelerate
+                        delivery, de-risk roadmaps, and mentor their teams.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <p>"Our product roadmap was stuck for months. Wink Initiatives aligned the stakeholders,
+                            redesigned the experience, and shipped a new release that doubled adoption in just one
+                            quarter."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonials/testimonials-1.jpg" alt="Portrait of Ama Boateng"
+                                width="48" height="48" />
+                            <span>
+                                <span class="author-name">Ama Boateng</span>
+                                <span class="author-title">Head of Digital, Pan-African Bank</span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>"They behave like a true partner—bringing structure, engineering excellence, and the
+                            documentation our regulators expect. We now release every two weeks with total confidence."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonials/testimonials-2.jpg" alt="Portrait of Daniel Owusu"
+                                width="48" height="48" />
+                            <span>
+                                <span class="author-name">Daniel Owusu</span>
+                                <span class="author-title">CTO, Logistics Scale-up</span>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <p>"From strategy to cloud infrastructure, Wink Initiatives mentored our internal engineers and
+                            left us with a maintainable platform that keeps delivering business value."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/img/testimonials/testimonials-3.jpg" alt="Portrait of Adwoa Mensimah"
+                                width="48" height="48" />
+                            <span>
+                                <span class="author-name">Adwoa Mensimah</span>
+                                <span class="author-title">Programme Director, GovTech Agency</span>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <div class="contact-wrap">
+                    <div class="contact-card">
+                        <span class="section-kicker">Let&rsquo;s talk</span>
+                        <h3>Start your next build with Wink Initiatives</h3>
+                        <p class="section-description">Tell us about your product vision, team goals, and timeline.
+                            We&rsquo;ll co-design a delivery plan that meets your targets.</p>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M1.5 5.25a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 5.25v13.5a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18.75V5.25Zm2.25-.75a.75.75 0 0 0-.75.75v.27l8.25 5.5 8.25-5.5v-.27a.75.75 0 0 0-.75-.75H3.75Zm16.5 3.02-8.04 5.36a.75.75 0 0 1-.82 0L3.75 7.52v11.23c0 .414.336.75.75.75h16.5c.414 0 .75-.336.75-.75V7.52Z" />
+                                </svg>
+                                <div>
+                                    <span class="faded">Email us</span>
+                                    <a href="mailto:winkinitiatives@gmail.com">winkinitiatives@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z" />
+                                </svg>
+                                <div>
+                                    <span class="faded">Call or WhatsApp</span>
+                                    <a href="tel:+233245248484">+233 24 524 8484</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M12 2.25c-4.7 0-8.5 3.78-8.5 8.45 0 6.19 7.08 11.38 8.52 12.36.3.2.7.2 1 0 1.44-.98 8.48-6.17 8.48-12.36 0-4.67-3.8-8.45-8.5-8.45Zm0 11.5a3.05 3.05 0 1 1 0-6.1 3.05 3.05 0 0 1 0 6.1Z" />
+                                </svg>
+                                <div>
+                                    <span class="faded">Headquarters</span>
+                                    <span>Accra, Ghana &amp; remote across Africa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="php-email-form contact-form" action="forms/contact.php" method="post">
+                        <input type="hidden" name="subject"
+                            value="New project enquiry from winkinitiatives.github.io" />
+                        <input type="text" name="name" placeholder="Full name" required />
+                        <input type="email" name="email" placeholder="Work email" required />
+                        <input type="text" name="company" placeholder="Company / organisation" />
+                        <textarea name="message" placeholder="Tell us about your project, timelines, and goals"
+                            required></textarea>
+                        <div class="loading">Sending...</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Thanks! We will reach out shortly.</div>
+                        <button class="primary-btn" type="submit">Request proposal</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; <span id="year"></span> Wink Initiatives, Ghana. All Rights Reserved.</p>
+        <div>&copy; <span id="year"></span> Wink Initiatives. Crafted in Ghana, partnering globally.</div>
+        <div><a href="#services">Services</a> &bull; <a href="#contact">Contact</a></div>
     </footer>
 
     <script>
-        // Update footer year
-        document.getElementById('year').textContent = new Date().getFullYear();
+        const navToggle = document.querySelector('[data-nav-toggle]');
+        const nav = document.querySelector('[data-nav]');
+
+        if (navToggle && nav) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = nav.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            nav.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (nav.classList.contains('open')) {
+                        nav.classList.remove('open');
+                        navToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        }
+
+        const yearTarget = document.getElementById('year');
+        if (yearTarget) {
+            yearTarget.textContent = new Date().getFullYear().toString();
+        }
     </script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 </body>
 
 </html>
