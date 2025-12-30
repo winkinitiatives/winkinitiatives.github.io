@@ -9,9 +9,10 @@
   --color-bg: #050714;
   --color-surface: rgba(10, 14, 28, 0.85);
   --color-card: rgba(16, 22, 41, 0.9);
-  --color-card-border: rgba(100, 116, 139, 0.2);
-  --color-text: #eef2ff;
-  --color-text-muted: #94a3b8;
+  --color-card-border: rgba(125, 140, 173, 0.28);
+  --color-border: rgba(125, 140, 173, 0.22);
+  --color-text: #f5f7ff;
+  --color-text-muted: #c8d2ff;
   --color-primary: #7b5cff;
   --color-primary-soft: rgba(123, 92, 255, 0.14);
   --color-primary-strong: #a995ff;
@@ -190,6 +191,7 @@ section {
   gap: 56px;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
 }
 
 .hero-copy {
@@ -197,6 +199,9 @@ section {
   flex-direction: column;
   gap: 28px;
   max-width: 520px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-eyebrow {
@@ -230,6 +235,7 @@ section {
   flex-wrap: wrap;
   gap: 16px;
   align-items: center;
+  justify-content: center;
 }
 
 .primary-btn,
@@ -270,6 +276,8 @@ section {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 560px;
+  margin: 0 auto;
 }
 
 .stat-card {
@@ -302,6 +310,7 @@ section {
   flex-wrap: wrap;
   gap: 14px;
   align-items: center;
+  justify-content: center;
   color: var(--color-text-muted);
   font-size: 14px;
 }
@@ -485,7 +494,6 @@ section {
   gap: 12px;
   padding: 24px;
 }
-
 .client-sector {
   font-size: 12px;
   letter-spacing: 0.12em;
@@ -514,9 +522,10 @@ section {
   color: var(--color-primary-strong);
 }
 
-.client-link svg {
-  width: 18px;
-  height: 18px;
+.client-link i {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .client-link:hover {
@@ -603,10 +612,14 @@ section {
   color: var(--color-text);
 }
 
-.contact-detail svg {
+.contact-detail i {
   width: 28px;
   height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-primary-strong);
+  font-size: 22px;
 }
 
 .detail-label {
@@ -1136,9 +1149,8 @@ footer a {
   transition: color 0.2s ease;
 }
 
-.client-link svg {
-  width: 16px;
-  height: 16px;
+.client-link i {
+  font-size: 16px;
   flex-shrink: 0;
 }
 
@@ -1156,8 +1168,8 @@ footer a {
 
 .app-card {
   border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid var(--color-border);
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
   padding: 22px;
   display: flex;
   flex-direction: column;
@@ -1360,10 +1372,14 @@ footer a {
   align-items: flex-start;
 }
 
-.contact-detail svg {
+.contact-detail i {
   flex-shrink: 0;
-  width: 18px;
+  width: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-primary);
+  font-size: 18px;
 }
 
 
@@ -1377,8 +1393,8 @@ footer a {
   width: 100%;
   padding: 16px 18px;
   border-radius: 14px;
-  border: 1px solid var(--color-border);
-  background: #f8fafc;
+  border: 1px solid var(--color-card-border);
+  background: rgba(12, 18, 34, 0.72);
   color: var(--color-text);
   font-size: 15px;
   font-family: var(--font-sans);
@@ -1433,10 +1449,10 @@ footer a {
 }
 
 .highlight-card {
-  background: #ffffff;
+  background: var(--color-card);
   border-radius: 22px;
   padding: 28px;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-card-border);
   box-shadow: var(--shadow-sm);
 }
 
