@@ -42,7 +42,7 @@
 
 <body class="starter-page-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -53,17 +53,35 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">Process</a></li>
+          <li><a href="index.html#features">Partners</a></li>
           <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#process">Process</a></li>
-          <li><a href="index.html#partners">Partners</a></li>
-          <li><a href="index.html#impact">Impact</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li> -->
+              <!-- <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li> -->
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#contact">Request proposal</a>
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
 
     </div>
   </header>
@@ -74,12 +92,12 @@
     <div class="page-title light-background">
       <div class="container">
         <nav class="breadcrumbs">
-          <ol>
+          <!-- <ol>
             <li><a href="index.html">Home</a></li>
             <li class="current">About</li>
-          </ol>
+          </ol> -->
         </nav>
-        <h1>About Wink Initiatives</h1>
+        <!-- <h1>About Wink Initiatives</h1> -->
       </div>
     </div><!-- End Page Title -->
 
@@ -159,10 +177,9 @@
           </a>
           <p>Wink Initiatives ships revenue-driving digital products with senior squads across Africa.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/wink_init/"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/winkinitiatives"><i class="bi bi-twitter-x"></i></a>
+            <a href="mailto:winkinitiatives@gmail.com"><i class="bi bi-envelope"></i></a>
           </div>
         </div>
 
