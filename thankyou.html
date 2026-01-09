@@ -80,8 +80,10 @@
             <p class="lead">Your payment has been processed successfully. The Wink Initiatives team will reach out soon
               with your next steps.</p>
             <p>If you have any questions or need to share additional details, email <a
-                href="mailto:winkinitiatives@gmail.com">winkinitiatives@gmail.com</a> and we&rsquo;ll be happy to help.
-            </p>
+                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=winkinitiatives@gmail.com&amp;su=Payment%20support%20-%20Wink%20Initiatives&amp;body=Hello%20Wink%20Initiatives%2C%0A%0A"
+                class="gmail-link"
+                data-mailto="mailto:winkinitiatives@gmail.com?subject=Payment%20support%20-%20Wink%20Initiatives">winkinitiatives@gmail.com</a>
+              and we&rsquo;ll be happy to help.</p>
             <div class="mt-4">
               <a href="index.html" class="btn btn-submit me-2">Return to homepage</a>
               <a href="index.html#services" class="btn btn-outline-light">Explore our services</a>
@@ -105,7 +107,10 @@
           <div class="social-links d-flex mt-4">
             <a href="https://www.instagram.com/wink_init/"><i class="bi bi-instagram"></i></a>
             <a href="https://x.com/winkinitiatives"><i class="bi bi-twitter-x"></i></a>
-            <a href="mailto:winkinitiatives@gmail.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=winkinitiatives@gmail.com&amp;su=Payment%20support%20-%20Wink%20Initiatives&amp;body=Hello%20Wink%20Initiatives%2C%0A%0A"
+              class="gmail-link"
+              data-mailto="mailto:winkinitiatives@gmail.com?subject=Payment%20support%20-%20Wink%20Initiatives"><i
+                class="bi bi-envelope"></i></a>
           </div>
         </div>
 
@@ -136,7 +141,10 @@
           <p>Accra, Ghana &amp; remote across Africa</p>
           <p class="mt-4"><strong>Phone:</strong> <span><a href="tel:+233554542340">+233 55 454 2340</a></span></p>
           <p><strong>Email:</strong> <span><a
-                href="mailto:winkinitiatives@gmail.com">winkinitiatives@gmail.com</a></span></p>
+                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=winkinitiatives@gmail.com&amp;su=Payment%20support%20-%20Wink%20Initiatives&amp;body=Hello%20Wink%20Initiatives%2C%0A%0A"
+                class="gmail-link"
+                data-mailto="mailto:winkinitiatives@gmail.com?subject=Payment%20support%20-%20Wink%20Initiatives">winkinitiatives@gmail.com</a></span>
+          </p>
         </div>
 
       </div>
@@ -169,6 +177,35 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.querySelectorAll('.gmail-link').forEach((link) => {
+      const mailto = link.getAttribute('data-mailto');
+
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const gmailUrl = link.getAttribute('href');
+        const gmailWindow = window.open(gmailUrl, '_blank');
+
+        if (gmailWindow) {
+          gmailWindow.opener = null;
+          return;
+        }
+
+        if (mailto) {
+          const tempLink = document.createElement('a');
+          tempLink.href = mailto;
+          tempLink.target = '_blank';
+          tempLink.rel = 'noopener';
+          tempLink.style.display = 'none';
+          document.body.appendChild(tempLink);
+          tempLink.click();
+          requestAnimationFrame(() => tempLink.remove());
+        }
+      });
+    });
+  </script>
 
 </body>
 
