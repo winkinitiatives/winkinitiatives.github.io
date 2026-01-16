@@ -3948,3 +3948,183 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Professional Refresh Overrides
+--------------------------------------------------------------*/
+:root {
+  --background-color: #f7fafb;
+  --default-color: #425b5b;
+  --heading-color: #0f2e2e;
+  --accent-color: #0f7c76;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.header {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.scrolled .header {
+  box-shadow: 0 10px 30px rgba(15, 46, 46, 0.08);
+}
+
+.header .logo h1,
+.footer .sitename {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.navmenu a {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.btn-getstarted,
+.hero .hero-content .hero-actions .btn-primary,
+.cta-button,
+.btn.btn-cta,
+.btn.btn-submit,
+.btn.btn-choose,
+.read-more,
+.service-card .service-title a {
+  border-radius: 999px;
+}
+
+.btn-getstarted,
+.btn-primary,
+.cta-button,
+.btn.btn-cta,
+.btn.btn-submit,
+.btn.btn-choose {
+  box-shadow: 0 12px 30px rgba(15, 124, 118, 0.18);
+}
+
+.hero {
+  background: radial-gradient(circle at 10% 20%, rgba(15, 124, 118, 0.08), transparent 45%),
+    radial-gradient(circle at 80% 0%, rgba(15, 124, 118, 0.08), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #f5faf9 100%);
+}
+
+.hero .hero-content .hero-title {
+  font-weight: 600;
+  letter-spacing: -0.8px;
+}
+
+.hero .hero-content .hero-description {
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.hero .hero-content .hero-actions .btn-secondary {
+  background: rgba(15, 124, 118, 0.08);
+  padding: 12px 18px;
+  border-radius: 999px;
+}
+
+.hero .hero-visual .hero-image-wrapper {
+  border-radius: 24px;
+  box-shadow: 0 28px 60px rgba(15, 46, 46, 0.15);
+}
+
+.section-title h2 {
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+.section-title span,
+.description-title {
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.features .tabs-wrapper,
+.features-cards .feature-card,
+.features-2 .feature-card,
+.services .service-card,
+.testimonial-item,
+.contact-form.card,
+.stats .stat-item,
+.about .stat-item,
+.compliance-card {
+  border-radius: 18px;
+  border: 1px solid rgba(15, 46, 46, 0.08);
+  box-shadow: 0 20px 45px rgba(15, 46, 46, 0.08);
+  background: var(--surface-color);
+}
+
+.features .nav-link {
+  border-radius: 18px;
+}
+
+.features .nav-link.active,
+.features .nav-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(15, 46, 46, 0.12);
+}
+
+.service-card,
+.feature-card,
+.testimonial-item {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover,
+.feature-card:hover,
+.testimonial-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(15, 46, 46, 0.16);
+}
+
+.features-2 .feature-card.highlighted {
+  border: 1px solid rgba(15, 124, 118, 0.25);
+  box-shadow: 0 30px 60px rgba(15, 124, 118, 0.18);
+}
+
+.call-to-action {
+  background: linear-gradient(135deg, #0f2e2e 0%, #073634 100%);
+}
+
+.call-to-action .floating-card,
+.call-to-action .content-area {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+}
+
+.contact .contact-form {
+  border-radius: 24px;
+  border: 1px solid rgba(15, 46, 46, 0.08);
+  box-shadow: 0 30px 70px rgba(15, 46, 46, 0.12);
+}
+
+.contact .form-control {
+  border-radius: 14px;
+  border: 1px solid rgba(15, 46, 46, 0.12);
+  padding: 14px 16px;
+}
+
+.contact .form-control:focus {
+  border-color: rgba(15, 124, 118, 0.7);
+  box-shadow: 0 0 0 0.2rem rgba(15, 124, 118, 0.18);
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-links a {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
